@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/baseline"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:id="@+id/ll_carType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|right"
+                    android:text="车  型:"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+
+                <TextView
+                    android:id="@+id/tv_carType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/icon_arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="选择车型"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|right"
+                    android:text="车  号:"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+
+                <EditText
+                    android:id="@+id/et_carNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="输入车号"
+                    android:inputType="none"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|right"
+                    android:text="价  格:"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+
+                <EditText
+                    android:id="@+id/et_carPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:hint="请输入购买价格"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_selectTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|right"
+                    android:text="购买时间:"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+
+                <TextView
+                    android:id="@+id/tv_buyTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableRight="@mipmap/icon_arrow_right"
+                    android:gravity="center_vertical"
+                    android:hint="选择购买时间"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_camera"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|right"
+                    android:text="点击拍照:"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:drawableRight="@mipmap/icon_arrow_right"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/font_text"
+                    android:textSize="@dimen/text_h" />
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraeeView
+                android:id="@+id/iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fresco:failureImage="@mipmap/img_car_default"
+                fresco:placeholderImage="@mipmap/img_car_default"
+                fresco:viewAspectRatio="1.333" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/green_radius"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="提 交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_xh" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

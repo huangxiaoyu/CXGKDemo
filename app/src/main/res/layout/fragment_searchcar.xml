@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/bg_title"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜 索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_xh"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:divider="@drawable/baseline"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:id="@+id/ll_carType"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:text="车  型:"
+                android:textColor="@color/font_text"
+                android:textSize="@dimen/text_h"/>
+
+            <TextView
+                android:id="@+id/tv_carType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:drawableRight="@mipmap/icon_arrow_right"
+                android:gravity="center_vertical"
+                android:text="选择车型"
+                android:textColor="@color/font_text"
+                android:textSize="@dimen/text_h"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical|right"
+                android:text="车  号:"
+                android:textColor="@color/font_text"
+                android:textSize="@dimen/text_h"/>
+
+            <EditText
+                android:id="@+id/et_carNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:hint="输入车号"
+                android:inputType="none"
+                android:textColor="@color/font_text"
+                android:textSize="@dimen/text_h"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_radius"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="查  询"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_xh"/>
+</LinearLayout>

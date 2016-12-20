@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CXGKDemo</string>
+    <string name="text_confirm">确定</string>
+    <string name="text_cancel">取消</string>
+    <string name="car_type">[{"id":0,"name":"轿车"},{"id":1,"name":"货车"},{"id":1,"name":"大卡车"}]</string>
+    <string name="net_error_n">网络异常\n</string>
+</resources>
