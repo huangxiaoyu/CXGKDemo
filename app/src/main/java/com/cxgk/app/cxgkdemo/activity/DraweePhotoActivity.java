@@ -17,7 +17,6 @@ import java.io.FileNotFoundException;
 
 public class DraweePhotoActivity extends AppCompatActivity {
     //    private PhotoViewAttacher mAttacher;
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
